@@ -1,12 +1,17 @@
 import React, {Component} from 'react'
-import Header from '../components/shared/Header';
+import BaseLayout from '../components/layouts/BaseLayout';
+import {Button, Container} from 'reactstrap';
+
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 class Index extends Component {
   render() {
     return (
-      <div>
-        <Header/>
-      </div>
+      <BaseLayout>
+        <Container>
+          <Button color="danger">Danger!</Button>
+        </Container>
+      </BaseLayout>
     )
   }
 }
