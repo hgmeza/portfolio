@@ -6,10 +6,29 @@ import Typed from 'react-typed';
 class Index extends Component {
   constructor(props) {
     super(props);
-
+    this.state = {
+      isFlipping: false
+    }
     this.roles = ['Computer Engineer', 'Software Engineer', 'Tech-Lover', 'Math Geek']
   }
+
+  componentDidMount() {
+    this.animateCard();
+  }
+
+  componentWillLeave() {
+    this.cardAnimationInterval && clearInterval(this.cardAnimationInterval);
+  }
+
+  animateCard() {
+    this.cardAnimationInterval = setInterval(() => {
+      this.setState({
+        isFlipping: !this.state.isFlipping
+      });
+    }, 3000)
+  }
   render() {
+    const {isFlipping} = this.state;
     return (
       <BaseLayout className="cover" headerType="index">
         <div className="main-section">
@@ -20,7 +39,7 @@ class Index extends Component {
             <Row>
               <Col md="6">
                 <div className="hero-section">
-                  <div className={`flipper`}>
+                  <div className={`flipper ${isFlipping ? 'isFlipping' : ''}`}>
                     <div className="back">
                       <div className="hero-section-content">
                         <h2> Aspiring Software Engineer </h2>
