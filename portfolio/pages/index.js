@@ -25,7 +25,7 @@ class Index extends Component {
       this.setState({
         isFlipping: !this.state.isFlipping
       });
-    }, 5000)
+    }, 6000)
   }
   render() {
     const {isFlipping} = this.state;
