@@ -9,14 +9,14 @@ class Index extends Component {
     this.state = {
       isFlipping: false
     }
-    this.roles = ['Computer Engineer', 'Software Engineer', 'Tech-Lover', 'Math Geek']
+    this.roles = ['Computer Engineer', 'Software Engineer', 'Tech-Lover', 'Math Geek', 'Built with React and Next.js']
   }
 
   componentDidMount() {
     this.animateCard();
   }
 
-  componentWillLeave() {
+  componentWillUnmount() {
     this.cardAnimationInterval && clearInterval(this.cardAnimationInterval);
   }
 
@@ -25,12 +25,12 @@ class Index extends Component {
       this.setState({
         isFlipping: !this.state.isFlipping
       });
-    }, 3000)
+    }, 5000)
   }
   render() {
     const {isFlipping} = this.state;
     return (
-      <BaseLayout className="cover" headerType="index">
+      <BaseLayout className={`cover ${isFlipping ? 'cover-1' : 'cover-2'}`} headerType="index">
         <div className="main-section">
           <div className="background-image">
             <img src="/static/images/background-index.png" />
@@ -40,7 +40,7 @@ class Index extends Component {
               <Col md="6">
                 <div className="hero-section">
                   <div className={`flipper ${isFlipping ? 'isFlipping' : ''}`}>
-                    <div className="back">
+                    <div className="front">
                       <div className="hero-section-content">
                         <h2> Aspiring Software Engineer </h2>
                         <div className="hero-section-content-intro">
@@ -49,6 +49,18 @@ class Index extends Component {
                       </div>
                       <img className="image" src="/static/images/section-1.png"/>
                       <div className="shadow-custom">
+                        <div className="shadow-inner"> </div>
+                      </div>
+                    </div>
+                    <div className="back">
+                      <div className="hero-section-content">
+                        <h2> Recent Computer Engineering Graduate </h2>
+                        <div className="hero-section-content-intro">
+                          Have a look at my portfolio and job history.
+                        </div>
+                      </div>
+                      <img className="image" src="/static/images/section-2.png"/>
+                      <div className="shadow-custom shadow-custom-2">
                         <div className="shadow-inner"> </div>
                       </div>
                     </div>
