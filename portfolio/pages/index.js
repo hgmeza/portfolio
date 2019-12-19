@@ -93,6 +93,9 @@ class Index extends Component {
               </Col>
             </Row>
           </Container>
+          <span className="service-link">Vector illustration credit: 
+            <a href="https://www.Vecteezy.com/">vecteezy.com</a>
+          </span>
         </div>
       </BaseLayout>
     )
