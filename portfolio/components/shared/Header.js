@@ -19,12 +19,12 @@ const BSNavLink = (props) => {
 }
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const {className} = props;
   const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
-      <Navbar className="port-navbar port-default absolute" color="transparent" dark expand="md">
+      <Navbar className={`port-navbar port-nav-base absolute ${className}`} color="transparent" dark expand="md">
         <NavbarBrand className="port-navbar-brand"href="/">Hugo Meza</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
