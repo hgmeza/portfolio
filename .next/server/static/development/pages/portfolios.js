@@ -2197,17 +2197,26 @@ class Portfolios extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
       position: 'Software Developer Intern',
       location: 'New York',
       company: 'Nuravine',
-      description: 'Worked in a startup company that focuses on indoor farming. My role was to transition their server to a serverless architecture using AWS'
+      description: 'Worked in a startup company that focuses on indoor farming. My role was to transition their server to a serverless architecture using AWS',
+      link: ''
     }, {
       position: 'Software Engineering Intern',
       location: 'New York',
       company: 'HelloYada, Inc.',
-      description: 'Startup that initially focused on data standarization. Then moved to mobile apps. My role was to develop their server and database from scratch while working on a React frontend'
+      description: 'Startup that initially focused on data standarization. Then moved to mobile apps. My role was to develop their server and database from scratch while working on a React frontend',
+      link: ''
     }, {
       position: 'Mini Instagram iOS Replica',
       location: 'New York',
-      company: 'Personal Project',
-      description: 'Developed a Parse backend that connected to iOS to replicate Instagram. Supported features are adding, liking, and commenting an image.'
+      company: 'iOS Project',
+      description: 'This is an Instagram clone with a custom Parse backend that allows a user to post photos, view a global photos feed, and add comments!',
+      link: 'https://github.com/hgmeza/Parstagram-iOS'
+    }, {
+      position: 'Twitter iOS Replica',
+      location: 'New York',
+      company: 'iOS Project',
+      description: 'Developed an iOS Twitter client. This is a basic twitter app to view, compose, favorite, and retweet tweets.',
+      link: 'https://github.com/hgmeza/twitter_rep_ios'
     }];
     return {
       posts
@@ -2230,9 +2239,15 @@ class Portfolios extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         className: "portfolio-card-title"
       }, post.company), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["CardText"], {
         className: "portfolio-card-text"
-      }, post.description), __jsx("div", {
-        className: "readMore"
-      }, " "))))));
+      }, post.description), post.link ? __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+        color: "danger"
+      }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["CardLink"], {
+        target: "_blank",
+        href: post.link,
+        style: {
+          color: "white"
+        }
+      }, "Repo")) : __jsx("div", null))))));
     });
   }
 
@@ -2242,7 +2257,7 @@ class Portfolios extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
     } = this.props;
     return __jsx(_components_layouts_BaseLayout__WEBPACK_IMPORTED_MODULE_1__["default"], null, __jsx(_components_BasePage__WEBPACK_IMPORTED_MODULE_2__["default"], {
       className: "portfolio-page",
-      title: "Portfolios"
+      title: "Portfolio"
     }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_3__["Row"], null, this.renderPosts(posts))));
   }
 
