@@ -87,12 +87,13 @@ class Index extends Component {
                   />
                 <div className="hero-welcome-bio">
                   <h1>
-                    Let's take a look on my work.
+                    Let's take a look at my work.
                   </h1>
                 </div>
               </Col>
             </Row>
           </Container>
+          <br />
           <span className="service-link">Vector illustration credit: 
             <a href="https://www.Vecteezy.com/">vecteezy.com</a>
           </span>

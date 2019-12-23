@@ -22,22 +22,22 @@ class About extends Component {
                   of Engineering at City College of New York, CUNY.
                 </p>
                 <p>
-                  I originally started at Brooklyn College, where I was part of the Swimming and Diving Team, and,
-                   while being a full-time student, working part-time, I was named Swimmer of the week twice, and 
-                   also broke swimming school records. More info <a target="_blank" href="https://www.brooklyncollegeathletics.com/news/2016/12/13/mens-swimming-diving-sophomore-hugo-meza-named-cunyac-swimmer-of-the-week.aspx">here.</a>
+                  I originally started at Brooklyn College, where I was part of the Swimming and Diving Team.
+                   While being a full-time student and working part-time, I was named Swimmer of the week twice, where I 
+                   also broke swimming school records! More info <a target="_blank" href="https://www.brooklyncollegeathletics.com/news/2016/12/13/mens-swimming-diving-sophomore-hugo-meza-named-cunyac-swimmer-of-the-week.aspx">here.</a>
                 </p>
                 <p>
-                  Being transferred to CCNY to pursue my engineering degree, I participated 
+                  After transferring to CCNY to pursue my engineering degree, I participated 
                   at a Software Development Bootcamp called <a target="_blank" href="https://cunytechprep.nyc/">CUNY Tech Prep </a>
-                   (if you scrol down, currently, I am in the last picture of the curriculum section!). Here, in a team of 4, we developed the 
+                   (if you scroll down, currently, I am in the last picture of the curriculum section!). Here, in a team of 4, we developed the 
                   <a target="_blank" href="http://climateaware.herokuapp.com/"> Climate Aware Web App.</a>
                 </p>
                 <p>
-                  I then became President of the Association for Computing Machinery - CCNY Chapter. Here, along the board, 
+                  I then became President of the Association for Computing Machinery - CCNY Chapter. Here, along with the board, 
                   we developed fun activies. Check out this one <a target="_blank" href="https://www.linkedin.com/posts/hgmeza_cuny-oncampus-citycollege-activity-6461297096560562176-Jd6E/">here!</a>
                 </p>
                 <p>
-                  And to add to that, I also interned twice at startup companies! Take a look at the CV section to know more about it!
+                  Finally, I also interned twice at startup companies! Take a look at the CV section to know more about it!
                 </p>
               </div>
             </Col>
